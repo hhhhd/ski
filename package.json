@@ -1,14 +1,12 @@
 {
   "name": "ski-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/ski.js",
   "style": "dist/default.css",
   "description": "Customizable mobile components for Vue.js",
   "author": "hugojing",
   "license": "MIT",
   "scripts": {
-    "dev:start": "rm dist/* && ln -s src/index.js dist/ski.js && npm link",
-    "dev:stop": "npm unlink && rm dist/ski.js && npm run build",
     "build": "node build/build.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "lint": "eslint --ext .js,.vue src",
@@ -21,7 +19,7 @@
   ],
   "dependencies": {
     "animate.css": "^3.5.2",
-    "normalize.css": "^5.0.0",  
+    "normalize.css": "^5.0.0",
     "vue-class-component": "^5.0.2"
   },
   "peerDependencies": {

@@ -1,5 +1,5 @@
-import Vue from 'vue';
-import button from '#/button';
+import Vue from 'vue'
+import button from '../../../src/components/button'
 
 describe('button', () => {
   it('should render correct contents', () => {

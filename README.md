@@ -49,12 +49,6 @@ globally:
 # install dependencies
 yarn install
 
-# start develop
-yarn dev:start
-
-# stop develop
-yarn dev:stop
-
 # build for production (UMD)
 yarn build
 
@@ -65,6 +59,6 @@ yarn unit
 yarn test
 ```
 
-After yarn dev:start, open ski-playground and code.
+After `npm link`, open ski-playground && `npm link ski-ui` && start coding.
 
-Attention: ski-playground do not need import global style, but less, vue class component, babel & plugins, etc are required. Because it imported source code.
+Attention: It will imported source code, so ski-playground do not need import global style, but less-loader, html-loader, vue class component, babel & plugins, etc are required.
