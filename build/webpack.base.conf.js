@@ -20,6 +20,14 @@ module.exports = {
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
+  externals: {
+    vue: {
+      root: 'Vue',
+      commonjs: 'vue',
+      commonjs2: 'vue',
+      amd: 'vue'
+    }
+  },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
@@ -32,7 +40,7 @@ module.exports = {
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',
         enforce: 'pre',
-        include: [resolve('packages'), resolve('src'), resolve('test')],
+        include: [resolve('src'), resolve('test')],
         options: {
           formatter: require('eslint-friendly-formatter')
         }
@@ -45,7 +53,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('packages'), resolve('src'), resolve('test')]
+        include: [resolve('src'), resolve('test')]
       },
       {
         test: /\.html$/,
