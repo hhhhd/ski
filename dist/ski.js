@@ -2971,7 +2971,7 @@ __webpack_require__(31)('observable');
 /* 116 */
 /***/ (function(module, exports) {
 
-module.exports = "<button class=\"text\"><slot></slot></button>\n";
+module.exports = "<button class=\"text\"><slot>提交</slot></button> \n";
 
 /***/ }),
 /* 117 */
