@@ -6337,7 +6337,10 @@ vue-template-es2015-compiler@^1.2.2:
   resolved "http://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.5.3.tgz#22787de4e37ebd9339b74223bc467d1adee30545"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 3a29e111b74bccf933cb9cf93fc409778133e8d4
 vue@^2.3.0:
   version "2.3.0"
   resolved "http://registry.npm.taobao.org/vue/download/vue-2.3.0.tgz#bc44db0488c5245c788304c7683efe7b4c862d82"
