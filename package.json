@@ -1,10 +1,6 @@
 {
   "name": "ski-ui",
-<<<<<<< HEAD
-  "version": "0.0.3",
-=======
   "version": "0.0.4",
->>>>>>> 3a29e111b74bccf933cb9cf93fc409778133e8d4
   "main": "dist/ski.js",
   "style": "dist/default.css",
   "description": "Customizable mobile components for Vue.js",
@@ -24,15 +20,8 @@
   "dependencies": {
     "animate.css": "^3.5.2",
     "normalize.css": "^5.0.0",
-<<<<<<< HEAD
-<<<<<<< HEAD
     "ski-ui": "^0.0.2",
-=======
     "vue": "^2.3.0",
->>>>>>> e01d8ec3f8856c82378ec9a0e9a5aa5a32604392
-=======
-    "vue": "^2.3.0",
->>>>>>> 3a29e111b74bccf933cb9cf93fc409778133e8d4
     "vue-class-component": "^5.0.2"
   },
   "peerDependencies": {
