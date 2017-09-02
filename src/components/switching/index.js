@@ -5,19 +5,29 @@ const template = require('./template.html')
 require('./style.less')
 
 @Component({
+  model: {
+    prop: 'checked',
+    event: 'change'
+  },
+  props: {
+    checked: Boolean,
+  },
   template,
 })
 export default class Switching extends Vue {
-  switching = ''
-  round = ''
+  isOn = false
+  isOff = true
 
-  change() {
-    if (this.switching === 's-switching__container_true') {
-      this.switching = 's-switching__container_folse'
-      this.round = 's-switching__round_folse'
+  emitClick() {
+    // this.$emit('on-off', this.switching)
+    if (this.isOn === false) {
+      this.isOn = true
+      this.isOff = false
+      this.$emit('change', this.isOn);
     } else {
-      this.switching = 's-switching__container_true'
-      this.round = 's-switching__round_true'
+      this.isOn = false
+      this.isOff = true
+      this.$emit('change', this.isOn);
     }
   }
 }

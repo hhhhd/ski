@@ -1,3 +1,8 @@
-<div :class="switching" class="s-switching__container_default" @click="change">
-  <div :class="round" class="s-switching__round_default"></div>
+<div :class="{'s-switching__container_true': isOn, 's-switching__container_false': isOff}" class="s-switching__container_default" @click="emitClick">
+  <div 
+  :class="{
+    's-switching__round_true': isOn, 
+    's-switching__round_false': isOff}" 
+  class="s-switching__round_default">
+  </div>
 </div>
