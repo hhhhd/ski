@@ -1,4 +1,4 @@
-<div class="s-checkbox__box_default">
-  <div class="s-checkbox__block_default"></div>
-  <slot>实验</slot>
+<div class="s-checkbox__box_default" @click="emitClick">
+  <div :class="{'s-checkbox__block_false': !checked, 's-checkbox__block_true': checked}"></div>
+  <span class="s-checkbox__text_default"><slot>实验</slot></span>
 </div>

@@ -1,17 +1,29 @@
 .s-checkbox__box_default {
-  height: 30px;
-  max-width: 100px;
-  background: #f00;
-  border-radius: 5px;
-  font-size: 20px;
+  min-width: 6em;
+  min-height: 2em;
+  font-size: 50px;
   display: flex;
   align-items: center;
+  padding: 0 .7em;
+  float: left;
 }
 
-.s-checkbox__block_default {
-  height: 26px;
-  width: 26px;
+.s-checkbox__block_false {
+  height: 1em;
+  width: 1em;
   background: #fff;
-  border: .1px solid #ccc;
-  border-radius: 3px;
+  border: 3px solid #ccc;
+  border-radius: 1em;
+  margin-right: 20px;
+  transition: all .2s;  
+}
+
+.s-checkbox__block_true {
+  transition: all .2s;  
+  height: 1em;
+  width: 1em;
+  background: #000;
+  border: 3px solid #ccc;
+  border-radius: 1em;
+  margin-right: 20px;
 }
