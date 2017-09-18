@@ -13,20 +13,21 @@ require('./style.less')
   props: {
     checked: Boolean,
   },
-  watch: {
-    checked(val) {
-      this.myChecked = val
-    },
-    myChecked(val) {
-      this.$emit('change', val)
-    }
-  }
+  // watch: {
+  //   checked(val) {
+  //     this.myChecked = val
+  //   },
+  //   myChecked(val) {
+  //     this.$emit('change', val)
+  //   }
+  // }
 })
 export default class Switching extends Vue {
 
-  myChecked = this.checked
+  // myChecked = this.checked
 
   emitClick() {
-    this.myChecked = !this.myChecked
+    this.$emit('change', !this.checked)
+    console.log(!this.checked)
   }
 }
