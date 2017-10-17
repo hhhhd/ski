@@ -1,6 +1,8 @@
-<div class="s-alert__box_default">
-  <div class="s-alert__content_default">
-    <div class="s-alert__content_top"></div>
-    <div class="s-alert__content_btm"></div>
+<transition name="fade">
+  <div :class="{'s-alert__box_false': this.isShow}" class="s-alert__box_true">
+    <div class="s-alert__content_default">
+      <div class="s-alert__content_top"><span>{{ msg }}</span></div>
+      <div @click="this.show" class="s-alert__content_btm">确定</div>
+    </div>
   </div>
-</div>
+</transition>

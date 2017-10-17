@@ -5,6 +5,18 @@ const template = require('./template.html')
 require('./style.less')
 
 @Component({
-  template
+  template,
+  props: {
+    msg: String,
+  },
+  data() {
+    return {
+      isShow: false
+    }
+  }
 })
-export default class Button extends Vue {}
+export default class Button extends Vue {
+  show() {
+    this.isShow = true
+  }
+}
