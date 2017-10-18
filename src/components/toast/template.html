@@ -1,0 +1,6 @@
+<transition name="fade">
+  <div class="s-toast__container_default">
+    <span v-show="valueOne" class="s-toast__containerOne_true" :class="{'s-toast__containerOne_false': this.isShow}">{{ msg }}</span>
+    <span v-show="valueTwo" class="s-toast__containerTwo_true">{{ msg }}</span>
+  </div>
+</transition>
