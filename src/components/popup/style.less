@@ -36,6 +36,46 @@
   border-color:transparent transparent #fff transparent;
 }
 
+.s-popup__top_false {
+  position: absolute;
+  top: -200px;
+  height: 200px;
+  background: rgba( 0, 0, 0, 0.4);
+  width: 100%;
+  transition: all .5s;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s-popup__top_false div {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: -200px;
+  right: 0;
+  background: #f00;
+}
+
+.s-popup__right_false {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: -100%;
+  background: #f00;
+  transition: all .4s;
+}
+
+.s-popup__right_true {
+  right: 0;
+}
+
+.s-popup__top_true {
+  top: 0;
+  opacity: 1;
+}
+
 .fade-enter-active {
   transition: opacity .2s
 }

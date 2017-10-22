@@ -13,6 +13,6 @@ require('./style.less')
 })
 export default class Button extends Vue {
   close() {
-    this.isShow = false
+    this.isShow = !this.isShow
   }
 }
