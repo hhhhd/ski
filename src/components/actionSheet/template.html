@@ -1,0 +1,10 @@
+<transition name="fade">
+  <div class="s-actionSheet__container_true" :class="{'s-actionSheet__container_false': showBox}">
+    <div class="s-actionSheet__photo_true" :class="{'s-actionSheet__photo_false': isShow}">
+      <div @click="close">拍照📷</div>
+      <div @click="close">从相册选择</div>
+      <div @click="close">取消</div>
+    </div>
+    <div class="cover"></div>    
+  </div>
+</transition>
