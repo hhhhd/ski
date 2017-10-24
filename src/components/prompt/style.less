@@ -1,0 +1,82 @@
+.s-prompt__containers_default {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #000;
+  opacity: .5;
+  z-index: -1;
+}
+
+.s-prompt__popup_default {
+  width: 80%;
+  height: 450px;
+  background: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.s-prompt__popup_default p {
+  font-size: 40px;
+  position: absolute;
+  top: 40px;
+  margin: 0;
+  color: #778899;
+}
+
+.s-prompt__popup_default input {
+  width: 70%;
+  height: 70px;
+  border-radius: 5px;
+  border: 1px solid #999;
+  outline: none;
+  font-size: 40px;
+  padding: 10px 30px;
+  position: absolute;
+  top: 170px;
+}
+
+.s-prompt__close_default {
+  bottom: 0;    
+  width: 100%;
+  height: 110px;
+  position: absolute;
+  border-top: 1px solid #999;
+}
+
+.s-prompt__close_default div {
+  width: 50%;
+  height: 110px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: #778899;
+}
+
+.s-prompt__close_default div:nth-child(2) {
+  border-left: 1px solid #999;
+  right: 0;
+  color: #00bfff;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0
+}
