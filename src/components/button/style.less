@@ -3,7 +3,6 @@
   height: 80px;
   margin: 0;
   outline: none;
-  background: #007FFF;
   border-radius: 20px;
   position: relative;
   border: none;
@@ -13,7 +12,29 @@
   transition: all .3s;
 }
 
-.s-text__button_default:active {
+.s-text__button_width {
+  width: 80%;
+}
+
+.s-text__button_big {
+  width: 180px;
+  height: 100px;
+}
+
+.s-text__button_primary {
+  background: #007FFF;
+}
+
+.s-text__button_danger {
+  background: #f00;
+}
+
+.s-text__button_danger:active {
+  background: #fff;
+  color: #f00;
+}
+
+.s-text__button_primary:active {
   background: #fff;
   color: #007FFF;
 }

@@ -1,6 +1,38 @@
-<button class="s-text__button_default">
-  <div class="s-text__button_cover"></div>
-  <slot>
-    确定
-  </slot>
-</button>
+<div>
+  <button class="s-text__button_default s-text__button_default" :class="{'s-text__button_width': true}">
+    <div class="s-text__button_cover"></div>
+    <slot>default</slot>
+  </button>
+  <button class="s-text__button_primary s-text__button_default" :class="{'s-text__button_width': true}">
+    <div class="s-text__button_cover"></div>
+    <slot>primary</slot>
+  </button>
+  <button class="s-text__button_danger s-text__button_default" :class="{'s-text__button_width': true}">
+    <div class="s-text__button_cover"></div>
+    <slot>danger</slot>
+  </button>
+  <button class="s-text__button_default s-text__button_default" :class="{'s-text__button_big': true}">
+    <div class="s-text__button_cover"></div>
+    <slot>default</slot>
+  </button>
+  <button class="s-text__button_primary s-text__button_default" :class="{'s-text__button_big': true}">
+    <div class="s-text__button_cover"></div>
+    <slot>primary</slot>
+  </button>
+  <button class="s-text__button_danger s-text__button_default" :class="{'s-text__button_big': true}">
+    <div class="s-text__button_cover"></div>
+    <slot>danger</slot>
+  </button>
+  <button class="s-text__button_default s-text__button_default">
+    <div class="s-text__button_cover"></div>
+    <slot>default</slot>
+  </button>
+  <button class="s-text__button_primary s-text__button_default">
+    <div class="s-text__button_cover"></div>
+    <slot>primary</slot>
+  </button>
+  <button class="s-text__button_danger s-text__button_default">
+    <div class="s-text__button_cover"></div>
+    <slot>danger</slot>
+  </button>
+</div>
