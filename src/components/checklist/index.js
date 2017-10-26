@@ -12,7 +12,5 @@ require('./style.less')
 })
 export default class Checklist extends Vue {
   isShow = false
-  GoTrue() {
-    this.isShow = !this.isShow
-  }
+  GoShow = this.getArr
 }
