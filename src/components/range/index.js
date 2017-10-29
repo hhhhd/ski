@@ -5,6 +5,11 @@ const template = require('./template.html')
 require('./style.less')
 
 @Component({
-  template
+  template,
+  props: {
+    setValue: Number,
+    setStep: Number,
+  }
 })
-export default class Button extends Vue {}
+export default class Range extends Vue {
+}

@@ -1,3 +1,4 @@
 <div class="s-range__container_default">
-  <input class="s-range__line_default" type="range" name="points" min="1" max="100" />
+  <input :class="{'s-range__line_default':true}" :step="setStep" type="range" min="0" max="100" :value="setValue" />
+  <input :class="{'s-range__line_disabled':true}" :step="setStep" type="range" min="0" max="100" :value="setValue" disabled/>
 </div>
