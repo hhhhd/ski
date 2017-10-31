@@ -1,8 +1,15 @@
+@purple: #9b59b6;
+@green: #2ecc71;
+@blue: #3498db;
+
 .s-spinner__containner_default {
-  width: 100px;
-  height: 100px;
-  margin: 30px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
+
+//------------------------ Round --------------------------//
 
 .s-spinner__round_default {
   position: relative;
@@ -14,7 +21,7 @@
   bottom: 0px;
   width: 50px;
   height: 50px;
-  background: #9b59b6;
+  background: @purple;
   position: absolute;
 }
 .s-spinner__round_default span:nth-child(1) {
@@ -43,7 +50,7 @@ border-radius:0px;
 {
 transform: translateX(-50px) translateY(-50px) rotate(-180deg);
 border-radius:50px;
-background:#3498db;
+background:@blue;
 }
 80% 
 {
@@ -89,7 +96,7 @@ border-radius:0px;
 {
 transform: translateX(-50px) translateY(50px) rotate(-180deg);
 border-radius:50px;
-background:#2ecc71;
+background:@green;
 }
 80%
 {
@@ -124,4 +131,121 @@ border-radius:0px;
 transform: translateX(0px) translateY(0px) rotate(360deg);
 border-radius:0px;
 }
+}
+
+//------------------------ Snake --------------------------//
+
+.s-spinner__snake_default{
+  position:relative;
+}
+.s-spinner__snake_default span{
+  position:absolute;
+  width:20px;
+  height:20px;
+  background:@blue;
+  opacity:0.5;
+  border-radius:20px;
+  animation: snake 1s infinite ease-in-out;
+   
+}
+.s-spinner__snake_default span:nth-child(2){
+  left:20px;
+  animation-delay: .2s;
+}
+.s-spinner__snake_default span:nth-child(3){
+  left:40px;
+  animation-delay: .4s;
+}
+
+.s-spinner__snake_default span:nth-child(4){
+  left:60px;
+  animation-delay: .6s;
+}
+
+.s-spinner__snake_default span:nth-child(5){
+  left:80px;
+  animation-delay: .8s;
+}
+
+@keyframes snake {
+  0%
+  {
+    opacity: 0.3;
+    transform:translateY(0px);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+  }
+  50%
+  {
+    opacity: 1;
+    transform: translateY(-10px);
+    background:#f1c40f;
+    box-shadow: 0px 20px 3px rgba(0, 0, 0, 0.05);
+  }
+  100%
+  {
+    opacity: 0.3;
+    transform:translateY(0px);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+//------------------------ Roulette --------------------------//
+
+
+.s-spinner__roulette_default{
+  position:relative;
+  width:30px;
+  height:30px;
+  background:@blue;
+  border-radius:50px;
+  animation: roulette 1.5s infinite linear;
+}
+
+.s-spinner__roulette_default:after{
+  position:absolute;
+  width:50px;
+  height:50px;
+  top:-20px;
+  left:-20px;
+  content:'';
+  border-radius:50px;
+  border-top:10px solid @purple;
+  border-bottom:10px solid @purple;
+  border-left:10px solid transparent;
+  border-right:10px solid transparent;
+  animation: roulette_after 1.5s infinite linear;
+}
+
+@keyframes roulette {
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  50%
+  {
+    transform: rotate(180deg);
+    background:@green;
+  }
+  100%
+  {
+    transform: rotate(360deg);
+  }
+}
+@keyframes roulette_after {
+  0%
+  {
+    border-top:10px solid @purple;
+    border-bottom:10px solid @purple;
+  }
+  50%
+  {
+    border-top:10px solid @blue;
+    border-bottom:10px solid @blue;
+  }
+  100%
+  {
+    border-top:10px solid @purple;
+    border-bottom:10px solid @purple;
+  }
 }
