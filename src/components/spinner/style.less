@@ -249,3 +249,105 @@ border-radius:0px;
     border-bottom:10px solid @purple;
   }
 }
+
+
+//------------------------ Window --------------------------//
+
+
+.s-spinner__window_default{
+    position:relative;
+    width: 42px;
+    height: 42px;
+    animation: Swindow 5s infinite linear;
+}
+.s-spinner__window_default span{
+    width:20px;
+    height:20px;
+    position:absolute;
+    background:red;
+    display:block;
+    animation: Swindow_span 1s infinite linear;
+}
+.s-spinner__window_default span:nth-child(1){
+  background: @green;
+}
+.s-spinner__window_default span:nth-child(2){
+  left:22px;
+  background: @purple;
+  animation-delay: .2s;
+}
+.s-spinner__window_default span:nth-child(3){
+  top:22px;
+  background: @blue;
+  animation-delay: .4s;
+}
+.s-spinner__window_default span:nth-child(4){
+  top:22px;
+  left:22px;
+  background:#f1c40f;
+  animation-delay: .6s;
+}
+@keyframes Swindow {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+@keyframes Swindow_span {
+   0% { transform: scale(1); }
+   50% { transform: scale(0.5); }
+   100% { transform: scale(1); }
+}
+
+
+//------------------------ Wava --------------------------//
+
+
+.s-spinner__wave_default{
+  position:relative;
+}
+.s-spinner__wave_default span{
+  display:block;
+  bottom:0px;
+  width: 9px;
+  height: 5px;
+  background:@purple;
+  position:absolute;
+  animation: wava 1.5s  infinite ease-in-out;
+}  
+.s-spinner__wave_default span:nth-child(2){
+  left:11px;
+  animation-delay: .2s;  
+}
+.s-spinner__wave_default span:nth-child(3){
+  left:22px;
+  animation-delay: .4s;
+}
+.s-spinner__wave_default span:nth-child(4){
+  left:33px;
+  animation-delay: .6s;
+}
+.s-spinner__wave_default span:nth-child(5){
+  left:44px;
+  animation-delay: .8s;
+}
+@keyframes wava {
+  0% {
+    height:5px;
+    transform:translateY(0px);
+    background:@purple;
+  }
+  25% {
+    height:30px;
+    transform:translateY(15px);
+    background:@blue;
+  }
+  50% {
+    height:5px;
+    transform:translateY(0px);
+    background:@purple;
+  }
+  100% {
+    height:5px;
+    transform:translateY(0px);
+    background:@purple;
+  }
+}
