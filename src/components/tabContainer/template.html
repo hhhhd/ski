@@ -1,0 +1,12 @@
+<div class="s-tab__containner_default">
+  <div class="s-tab__buttonTab_default">
+    <span @click="ShowBoxOne" class="s-tab__button_default"></span>
+    <span @click="ShowBoxTwo" class="s-tab__button_default"></span>
+    <span @click="ShowBoxThree" class="s-tab__button_default"></span>
+  </div>
+  <div class="s-tab__TabContainner_default">
+    <span v-show="isShowOne" class="s-tab__box_default"></span>
+    <span v-show="isShowTwo" class="s-tab__box_default"></span>
+    <span v-show="isShowThree" class="s-tab__box_default"></span>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+import Vue from 'vue'
+import Component from 'vue-class-component'
+
+const template = require('./template.html')
+require('./style.less')
+
+@Component({
+  template,
+  props: {
+    value: Number,
+  }
+})
+export default class TabContainer extends Vue {
+  isShowOne = true
+  isShowTwo = false
+  isShowThree = false
+  mounted() {
+    if (this.value === 1) {
+      this.isShowOne = true;
+      this.isShowTwo = false;
+      this.isShowThree = false;
+    } else if (this.value === 2) {
+      this.isShowOne = false;
+      this.isShowTwo = true;
+      this.isShowThree = false;
+    } else if (this.value === 3) {
+      this.isShowOne = false;
+      this.isShowTwo = false;
+      this.isShowThree = true;
+    } else {
+      console.log('请输入1～3')
+    }
+  }
+  ShowBoxOne() {
+    this.isShowOne = true;
+    this.isShowTwo = false;
+    this.isShowThree = false;
+  }
+  ShowBoxTwo() {
+    this.isShowOne = false;
+    this.isShowTwo = true;
+    this.isShowThree = false;
+  }
+  ShowBoxThree() {
+    this.isShowOne = false;
+    this.isShowTwo = false;
+    this.isShowThree = true;
+  }
+}
