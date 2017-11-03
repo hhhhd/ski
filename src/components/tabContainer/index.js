@@ -8,9 +8,13 @@ require('./style.less')
   template,
   props: {
     value: Number,
+    title: Array,
   }
 })
 export default class TabContainer extends Vue {
+  titleOne = this.title[0]
+  titleTwo = this.title[1]
+  titleThree = this.title[2]
   isShowOne = true
   isShowTwo = false
   isShowThree = false

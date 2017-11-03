@@ -7,7 +7,6 @@
 
 .s-tab__buttonTab_default {
   flex: 1;
-  background: #f00;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,36 +14,40 @@
 
 .s-tab__TabContainner_default {
   flex: 8;
+  box-shadow:0px 0px 200px 10px #ddd inset;
 }
 
 .s-tab__button_default {
   width: 240px;
   height: 100px;
-  display: block;
-  background: #ddd;
+  display: flex;
   margin: 0 40px;
   border-radius: 20px;
   transition: all .4s;
+  border: 3px solid #ddd;
+  box-shadow:0px 0px 20px 50px #ddd inset;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
 }
 
 .s-tab__button_default:hover {
-  box-shadow: 0px 0px 20px 5px #666;
+  box-shadow: 0px 0px 20px 2px #ddd inset;
+  font-size: 40px;
 }
 
 .s-tab__box_default {
   position: absolute;
   width: 100%;
   height: 100%;
+  transition: all 1s;
 }
 
 .s-tab__TabContainner_default span:nth-child(1) {
-  background: yellowgreen;
 }
 
 .s-tab__TabContainner_default span:nth-child(2) {
-  background: green;
 }
 
 .s-tab__TabContainner_default span:nth-child(3) {
-  background: yellow;
 }
