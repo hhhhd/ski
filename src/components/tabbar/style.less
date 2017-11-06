@@ -1,0 +1,46 @@
+.s-tabbar__container_default {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #ddd;
+  position: fixed;
+}
+
+.s-tabbar__header_default {
+  flex: 1;
+  background: #f0f;
+}
+
+.s-tabbar__middle_default {
+  flex: 9;
+  background: #0f0;
+  overflow-y: scroll;
+}
+
+.s-tabbar__bottom_default {
+  flex: 1;
+  background: #00f;
+  position: relative;
+  z-index: 100;
+  background: #ddd;
+}
+
+.s-tabbar__bottom_default div {
+  width: 25%;
+  height: 100%;
+  background: #fff;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 33px;
+  color: #666;
+  opacity: .6;
+  transition: all .4s;
+}
+
+.s-tabbar__bottom_default div:hover {
+  color: #32cd99;
+  background: rgba(0, 0, 0, .1);
+}

@@ -1,0 +1,15 @@
+<div class="s-tabbar__container_default">
+  <div class="s-tabbar__header_default"></div>
+  <div class="s-tabbar__middle_default">
+    <div v-show="SOne" class="s-tabbar__boxOne"></div>
+    <div v-show="STwo" class="s-tabbar__boxTwo"></div>
+    <div v-show="SThree" class="s-tabbar__boxThree"></div>
+    <div v-show="SFour" class="s-tabbar__boxFour"></div>
+  </div>
+  <div class="s-tabbar__bottom_default">
+    <div @click="showOne">外卖</div>
+    <div @click="showTwo">订单</div>
+    <div @click="showThree">发现</div>
+    <div @click="showFour">我的</div>
+  </div>
+</div>
