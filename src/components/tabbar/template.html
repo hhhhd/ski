@@ -1,10 +1,28 @@
 <div class="s-tabbar__container_default">
-  <div class="s-tabbar__header_default"></div>
+  <div class="s-tabbar__header_default">
+    <p>tabbar</p>
+  </div>
   <div class="s-tabbar__middle_default">
-    <div v-show="SOne" class="s-tabbar__boxOne"></div>
-    <div v-show="STwo" class="s-tabbar__boxTwo"></div>
-    <div v-show="SThree" class="s-tabbar__boxThree"></div>
-    <div v-show="SFour" class="s-tabbar__boxFour"></div>
+    <div v-show="SOne" class="s-tabbar__boxOne_default">
+      <div class="s-tabbar__current_default">
+        当前选中了<p>外卖</p>
+      </div>
+    </div>
+    <div v-show="STwo" class="s-tabbar__boxTwo_default">
+      <div class="s-tabbar__current_default">
+      当前选中了<p>订单</p>
+      </div>
+    </div>
+    <div v-show="SThree" class="s-tabbar__boxThree_default">
+      <div class="s-tabbar__current_default">
+      当前选中了<p>发现</p>
+      </div>
+    </div>
+    <div v-show="SFour" class="s-tabbar__boxFour_default">
+      <div class="s-tabbar__current_default">
+      当前选中了<p>我的</p>
+      </div>
+    </div>
   </div>
   <div class="s-tabbar__bottom_default">
     <div @click="showOne">外卖</div>

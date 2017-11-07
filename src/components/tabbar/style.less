@@ -3,27 +3,31 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  background: #ddd;
+  background: rgba(200, 200, 200, .1);
   position: fixed;
 }
 
 .s-tabbar__header_default {
   flex: 1;
-  background: #f0f;
+  background: rgba(255, 255, 255, .1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
 }
 
 .s-tabbar__middle_default {
   flex: 9;
-  background: #0f0;
   overflow-y: scroll;
+  position: relative;
 }
 
 .s-tabbar__bottom_default {
   flex: 1;
-  background: #00f;
   position: relative;
   z-index: 100;
   background: #ddd;
+  border-top: 1px solid #999;
 }
 
 .s-tabbar__bottom_default div {
@@ -38,6 +42,26 @@
   color: #666;
   opacity: .6;
   transition: all .4s;
+}
+
+.s-tabbar__current_default p {
+  position: relative;
+  left: 60%;
+  margin: 0;
+}
+
+.s-tabbar__current_default {
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background: #fff;
+  font-size: 40px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .s-tabbar__bottom_default div:hover {
