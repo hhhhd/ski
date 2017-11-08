@@ -7,21 +7,25 @@
       <div class="s-tabbar__current_default">
         当前选中了<p>外卖</p>
       </div>
+      <div v-for="(item, index) in boxOne" :key="index" class="s-tabbar__text_default">{{ item.value }}</div>
     </div>
     <div v-show="STwo" class="s-tabbar__boxTwo_default">
       <div class="s-tabbar__current_default">
       当前选中了<p>订单</p>
       </div>
+      <div v-for="(item, index) in boxTwo" :key="index" class="s-tabbar__text_default">{{ item.value }}</div>    
     </div>
     <div v-show="SThree" class="s-tabbar__boxThree_default">
       <div class="s-tabbar__current_default">
       当前选中了<p>发现</p>
       </div>
+      <div v-for="(item, index) in boxThree" :key="index" class="s-tabbar__text_default">{{ item.value }}</div>    
     </div>
     <div v-show="SFour" class="s-tabbar__boxFour_default">
       <div class="s-tabbar__current_default">
       当前选中了<p>我的</p>
       </div>
+      <div v-for="(item, index) in boxFour" :key="index" class="s-tabbar__text_default">{{ item.value }}</div>    
     </div>
   </div>
   <div class="s-tabbar__bottom_default">

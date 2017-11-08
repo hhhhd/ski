@@ -5,7 +5,13 @@ const template = require('./template.html')
 require('./style.less')
 
 @Component({
-  template
+  template,
+  props: {
+    boxOne: Array,
+    boxTwo: Array,
+    boxThree: Array,
+    boxFour: Array
+  }
 })
 export default class Button extends Vue {
   SOne = true
