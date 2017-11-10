@@ -6,6 +6,6 @@ describe('button', () => {
     const Constructor = Vue.extend(button);
     const vm = new Constructor().$mount();
     expect(vm.$el.nodeName)
-      .to.equal('DIV');
+      .to.equal('BUTTON');
   });
 });
