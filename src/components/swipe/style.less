@@ -1,0 +1,41 @@
+.s-swipe__container_default {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.s-swipe__boxOne_default {
+  background: rgb(255, 81, 0);
+}
+
+.s-swipe__boxTwo_default {
+  background: rgb(51, 168, 41);
+}
+
+.s-swipe__boxThree_default {
+  background: rgb(0, 153, 255);
+}
+
+.s-swipe__box_default {
+  position: absolute;
+  transition: all 1s;
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s-swipe__box_false {
+  width: 0;
+  height: 500px;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+}
+
+.s-swipe__box_true {
+  width: 100%;
+  right: 0;
+  z-index: 1;
+  opacity: 1;
+}
