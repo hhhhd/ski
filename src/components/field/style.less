@@ -1,4 +1,4 @@
-.s-field__text_dafault, .s-field__birthday_default {
+.s-field__text_dafault, .s-field__birthday_default, .s-field__number_default {
   width: 90%;
   height: 140px;
   margin: 0 auto;
@@ -23,10 +23,29 @@
   font-size: 40px;
 }
 
-.s-field__date_dafault {
+.s-field__date_dafault, .s-field__number_default input {
   flex: 7;
   font-size: 40px;
   height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+}
+
+.s-field__textarea_default {
+  width: 90%;
+  height: 280px;
+  margin: 0 auto;
+  border-bottom: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s-field__textarea_default textarea {
+  flex: 7;
+  font-size: 40px;
   border: none;
   background: none;
   outline: none;
