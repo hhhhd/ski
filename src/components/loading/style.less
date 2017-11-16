@@ -1,0 +1,154 @@
+@black: #000;
+
+.s-loading__box_default {
+  border-bottom: 1px solid @black;
+  border-top: 1px solid @black;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  animation: slidein 1s infinite;
+}
+
+@keyframes slidein 
+{
+  0% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(-360deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.s-loading__round_default {
+  width: 60px;
+  height: 60px;
+  border-right: 1px solid @black;
+  border-left: 1px solid @black;
+  border-radius: 30px;
+  transition: all 1s;
+  transform: rotate(-360deg)
+}
+
+.s-loadingTwo__box_default {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  animation: changeZero 1s infinite;
+}
+
+.s-loadingTwo__roundOne, .s-loadingTwo__roundTwo, .s-loadingTwo__roundThree, .s-loadingTwo__roundFour {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: #f00;
+  position: absolute;
+}
+
+.s-loadingTwo__roundOne {
+  animation: changeOne 1s infinite;
+}
+
+.s-loadingTwo__roundTwo {
+  animation: changeTwo 1s infinite;
+}
+
+.s-loadingTwo__roundThree {
+  animation: changeThree 1s infinite;
+}
+
+.s-loadingTwo__roundFour {
+  animation: changeFour 1s infinite;
+}
+
+@keyframes changeZero {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  40% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes changeOne {
+  0% {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  40% {
+    margin-top: -25px;
+    margin-left: -25px;
+  }
+
+  100% {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+@keyframes changeTwo {
+  0% {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  40% {
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+
+  100% {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+@keyframes changeThree {
+  0% {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  40% {
+    margin-top: 25px;
+    margin-left: -25px;
+  }
+
+  100% {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+@keyframes changeFour {
+  0% {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  40% {
+    margin-top: -25px;
+    margin-left: 25px;
+  }
+
+  100% {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
