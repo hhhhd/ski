@@ -1,5 +1,4 @@
-<button class="s-text__button_default">
-  <slot>
-    确定
-  </slot>
+<button class="s-text__button_default s-text__button_default" :class="{'s-text__button_width': true}">
+  <div class="s-text__button_cover"></div>
+  <slot>default</slot>
 </button>
