@@ -1,0 +1,49 @@
+.s-toast__container_default {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s-toast__containerOne_true {
+  position: absolute;
+  bottom: 20%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, .6);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  transition: all .5s;
+}
+
+.s-toast__containerOne_false {
+  opacity: 0;
+}
+
+
+.s-toast__containerTwo_true {
+  background: #000;
+  position: absolute;
+  border-radius: 10px;
+  top: 40%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  padding: 80px 60px;
+}
+
+.fade-enter-active {
+  transition: opacity .2s
+}
+
+.fade-leave-active {
+  transition: opacity .5s
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0
+}
