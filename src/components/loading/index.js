@@ -5,6 +5,7 @@ const template = require('./template.html')
 require('./style.less')
 
 @Component({
-  template
+  template,
 })
-export default class Button extends Vue {}
+export default class Loading extends Vue {
+}

@@ -47,7 +47,7 @@ globally:
 
 ``` bash
 # install dependencies
-yarn install
+yarn
 
 # build for production (UMD)
 yarn build
@@ -59,6 +59,6 @@ yarn unit
 yarn test
 ```
 
-After `npm link`, open ski-playground && `npm link ski-ui` && start coding.
+After `yarn link`, open ski-playground && `yarn link ski-ui` && start coding.
 
 Attention: It will imported source code, so ski-playground do not need import global style, but less-loader, html-loader, vue class component, babel & plugins, etc are required.
