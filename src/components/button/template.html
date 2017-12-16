@@ -1,14 +1,8 @@
-<div>
-  <button v-show="showDefault" class="s-button__default_default" :class="{'s-button__defaultSml_default': sizeSml, 's-button__defaultMid_default': sizeMid, 's-button__defaultBig_default': sizeBig}">
-    <div class="s-text__button_cover"></div>
-    <slot>default</slot>
-  </button>
-  <button v-show="showdanger" class="s-button__danger_default" :class="{'s-button__dangerSml_default': sizeSml,'s-button__dangerMid_default': sizeMid, 's-button__dangerBig_default': sizeBig}">
-    <div class="s-text__button_cover"></div>
-    <slot>danger</slot>
-  </button>
-  <button v-show="showPrimary" class="s-button__primary_default" :class="{'s-button__primarySml_default': sizeSml,'s-button__primaryMid_default': sizeMid, 's-button__primaryBig_default': sizeBig}">
-    <div class="s-text__button_cover"></div>
-    <slot>primary</slot>
-  </button>
-</div>
+<button :class="{
+  's-button__default_default': type === 'default',
+  's-button__danger_default': type === 'danger',
+  's-button__primary_default': type === 'primary',
+  's-button__small_default': size === 'small',
+  's-button__middle_default': size === 'middle',
+  's-button__big_default': size === 'big'}">
+  <slot>text</slot></button>
