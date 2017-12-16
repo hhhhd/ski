@@ -1,46 +1,50 @@
-.s-text__button_default {
-  width: 150px;
-  height: 80px;
-  margin: 0;
+.s-button__default_default, .s-button__danger_default, .s-button__primary_default {
   outline: none;
-  border-radius: 20px;
-  position: relative;
   border: none;
-  color: #fff;
+  border-radius: 10px;
   font-size: 35px;
-  cursor: pointer;
   transition: all .3s;
+  color: #fff;
 }
 
-.s-text__button_cover {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.s-button__default_default {
+  background: #ccc;
 }
 
-.s-text__button_width {
-  width: 80%;
-}
-
-.s-text__button_big {
-  width: 180px;
-  height: 100px;
-}
-
-.s-text__button_primary {
-  background: #007FFF;
-}
-
-.s-text__button_danger {
+.s-button__danger_default {
   background: #f00;
 }
 
-.s-text__button_danger:active {
-  background: #fff;
-  color: #f00;
+.s-button__primary_default {
+  background: #007FFF;
 }
 
-.s-text__button_primary:active {
+.s-button__default_default:active {
+  color: #ccc;
+  background: #fff;
+}
+
+.s-button__danger_default:active {
+  color: #f00;
+  background: #fff;
+}
+
+.s-button__primary_default:active {
   background: #fff;
   color: #007FFF;
+}
+
+.s-button__small_default {
+  height: 120px;
+  width: 100%;
+}
+
+.s-button__middle_default {
+  width: 150px;
+  height: 80px;
+}
+
+.s-button__big_default {
+  width: 200px;
+  height: 100px;
 }

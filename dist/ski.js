@@ -2910,11 +2910,7 @@ __webpack_require__(31)('observable');
 /* 116 */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-module.exports = "<button class=\"text\"><slot>提交</slot></button> \n";
-=======
 module.exports = "<button class=\"s-button__button_default\">\n  <slot>\n    确定\n  </slot>\n</button>\n";
->>>>>>> 3a29e111b74bccf933cb9cf93fc409778133e8d4
 
 /***/ }),
 /* 117 */
