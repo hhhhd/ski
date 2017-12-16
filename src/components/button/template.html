@@ -1,8 +1,3 @@
-<button :class="{
-  's-button__default_default': type === 'default',
-  's-button__danger_default': type === 'danger',
-  's-button__primary_default': type === 'primary',
-  's-button__small_default': size === 'small',
-  's-button__middle_default': size === 'middle',
-  's-button__big_default': size === 'big'}">
-  <slot>text</slot></button>
+<button :class="{'s-button__default_default': type === 'default', 's-button__danger_default': type === 'danger', 's-button__primary_default': type === 'primary', 's-button__small_default': size === 'small', 's-button__middle_default': size === 'middle', 's-button__big_default': size === 'big'}">
+  <slot>text</slot>
+</button>
