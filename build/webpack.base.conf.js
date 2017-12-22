@@ -38,6 +38,10 @@ module.exports = {
         }
       },
       {
+        test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
+        loader: 'file-loader'
+      },
+      {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: vueLoaderConfig
@@ -45,7 +49,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src'), resolve('test')]
+        include: [resolve('src'), resolve('test')],
       },
       {
         test: /\.html$/,

@@ -11,4 +11,8 @@ require('./style.less')
     size: String
   }
 })
-export default class Button extends Vue {}
+export default class Button extends Vue {
+  showType() {
+    console.log(typeof this.type, typeof this.size)
+  }
+}

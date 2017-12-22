@@ -13,7 +13,7 @@ require('./style.less')
     boxFour: Array
   }
 })
-export default class Button extends Vue {
+export default class Tabbar extends Vue {
   SOne = true
   STwo = false
   SThree = false

@@ -18,5 +18,6 @@ require('./style.less')
 export default class Button extends Vue {
   show() {
     this.isShow = true
+    console.log(this.msg)
   }
 }
