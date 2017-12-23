@@ -1,4 +1,4 @@
 <div class="s-range__container_default">
-  <input :class="{'s-range__line_default':true}" :step="setStep" type="range" min="0" max="100" :value="setValue" />
-  <input :class="{'s-range__line_disabled':true}" :step="setStep" type="range" min="0" max="100" :value="setValue" disabled/>
+  <input v-show="type === 'big'" class="s-range__line_default" :step="parseInt(setStep)" type="range" min="0" max="100" :value="setValue" />
+  <input v-show="type === 'small'" class="s-range__line_disabled" :step="parseInt(setStep)" type="range" min="0" max="100" :value="setValue" />
 </div>

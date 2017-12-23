@@ -7,9 +7,13 @@ require('./style.less')
 @Component({
   template,
   props: {
-    setValue: Number,
-    setStep: Number,
+    setValue: String,
+    setStep: String,
+    type: String,
   }
 })
 export default class Range extends Vue {
+  mounted() {
+    console.log(this.type)
+  }
 }
