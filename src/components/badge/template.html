@@ -1,5 +1,5 @@
 <div class="s-badge__box_default">
-  <div v-show="showBig" class="s-badge__big_default" :class="{'s-badge__blueBig_default': CBlue, 's-badge__redBig_default': CRed, 's-badge__greenBig_default': CGreen, 's-badge__yellowBig_default': CYellow}">{{ msg }}</div>
-  <div v-show="showMid" class="s-badge__mid_default" :class="{'s-badge__blueMid_default': CBlue, 's-badge__redMid_default': CRed, 's-badge__greenMid_default': CGreen, 's-badge__yellowMid_default': CYellow}">{{ msg }}</div>
-  <div v-show="showMin" class="s-badge__min_default" :class="{'s-badge__blueMin_default': CBlue, 's-badge__redMin_default': CRed, 's-badge__greenMin_default': CGreen, 's-badge__yellowMin_default': CYellow}">{{ msg }}</div>
+  <div v-show="type==='big'" class="s-badge__big_default" :class="{'s-badge__blueBig_default': color==='blue', 's-badge__redBig_default': color==='red', 's-badge__greenBig_default': color==='green', 's-badge__yellowBig_default': color==='yellow'}">{{ msg }}</div>
+  <div v-show="type==='middle'" class="s-badge__mid_default" :class="{'s-badge__blueMid_default': color==='blue', 's-badge__redMid_default': color==='red', 's-badge__greenMid_default': color==='green', 's-badge__yellowMid_default': color==='yellow'}">{{ msg }}</div>
+  <div v-show="type==='small'" class="s-badge__min_default" :class="{'s-badge__blueMin_default': color==='blue', 's-badge__redMin_default': color==='red', 's-badge__greenMin_default': color==='green', 's-badge__yellowMin_default': color==='yellow'}">{{ msg }}</div>
 </div>
