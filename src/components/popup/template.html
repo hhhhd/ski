@@ -1,16 +1,15 @@
 <transition name="fade">
-  <div class="s-popup__container_true" @click="close">
-    <div v-show="false" class="s-popup__top_false" :class="{'s-popup__top_true':isShow}">
+  <div class="s-popup__container_true">
+    <div v-show="type === 'top'" class="s-popup__top_false" :class="{'s-popup__top_true':show === 'true'}">
       <p>{{ msg }}</p>
     </div>
-    <div class="s-popup__bottom_default"></div>
-    <div v-show="false" class="s-popup__middle_default">
+    <div v-show="type === 'middle'" class="s-popup__middle_false" :class="{'s-popup__middle_true':show === 'true'}">
       <div class="s-popup__midBox_default">
         <p>{{ msg }}</p>
         <div class="s-popup__triangle_default"></div>        
       </div>
     </div>
-    <div class="s-popup__right_false" :class="{'s-popup__right_true':isShow}">
+    <div v-show="type === 'right'" class="s-popup__right_false" :class="{'s-popup__right_true':show === 'true'}">
     </div>
   </div>
 </transition>

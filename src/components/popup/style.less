@@ -7,7 +7,8 @@
   z-index: 100;
 }
 
-.s-popup__middle_default {
+.s-popup__middle_false {
+  opacity: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.1);
@@ -25,6 +26,7 @@
   min-width: 300px;
   min-height: 100px;
   padding: 0 20px;
+  text-align: center;
 }
 
 .s-popup__triangle_default {
@@ -63,7 +65,7 @@
   height: 100%;
   position: absolute;
   right: -100%;
-  background: #f00;
+  background: linear-gradient(to left, #abbaab, #ffffff);
   transition: all .4s;
 }
 
@@ -71,7 +73,7 @@
   right: 0;
 }
 
-.s-popup__top_true {
+.s-popup__top_true, .s-popup__middle_true {
   top: 0;
   opacity: 1;
 }

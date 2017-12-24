@@ -8,11 +8,8 @@ require('./style.less')
   template,
   props: {
     msg: String,
-    isShow: Boolean,
+    type: String,
+    show: String,
   }
 })
-export default class Button extends Vue {
-  close() {
-    this.isShow = !this.isShow
-  }
-}
+export default class Button extends Vue {}
