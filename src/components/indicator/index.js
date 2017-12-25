@@ -7,7 +7,9 @@ require('./style.less')
 @Component({
   template,
   props: {
-    showText: Boolean,
+    showText: String,
+    show: String,
+    msg: String,
   }
 })
 export default class indicator extends Vue {}
