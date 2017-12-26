@@ -1,25 +1,25 @@
 <div class="s-spinner__containner_default">
-  <div class="s-spinner__round_default">
+  <div v-show="type==='round'" class="s-spinner__round_default">
     <span></span>
     <span></span>
     <span></span>
     <span></span>
   </div>
-  <div class="s-spinner__snake_default">
+  <div v-show="type==='snake'" class="s-spinner__snake_default">
     <span></span>
     <span></span>
     <span></span>
     <span></span>
     <span></span>
   </div>
-  <div class="s-spinner__roulette_default"></div>
-  <div class="s-spinner__window_default">
+  <div v-show="type==='roulette'" class="s-spinner__roulette_default"></div>
+  <div v-show="type==='window'" class="s-spinner__window_default">
     <span></span>
     <span></span>
     <span></span>
     <span></span>
   </div>
-  <div class="s-spinner__wave_default">
+  <div v-show="type==='wave'" class="s-spinner__wave_default">
     <span></span>
     <span></span>
     <span></span>
