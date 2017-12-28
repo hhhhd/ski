@@ -1,21 +1,21 @@
 <div>
-  <div v-show="Stext" class="s-field__text_dafault">
+  <div v-show="type==='text'" class="s-field__text_dafault">
     <div class="s-field__title_dafault">{{ msg }}</div>
     <input type="text" :placeholder="defaultText" @input="Svalue">
   </div>
-  <div v-show="Sbirthday" class="s-field__birthday_default">
+  <div v-show="type==='birthday'" class="s-field__birthday_default">
     <div class="s-field__title_dafault">{{ msg }}</div>
     <input class="s-field__date_dafault" type="date" placeholder="年/月/日" @input="Svalue"> 
   </div>
-  <div v-show="Stextarea" class="s-field__textarea_default">
+  <div v-show="type==='self'" class="s-field__textarea_default">
     <div class="s-field__title_dafault">{{ msg }}</div>
-    <textarea rows="4" :placeholder="defaultText"></textarea>
+    <textarea rows="4" :placeholder="defaultText" @input="Svalue"></textarea>
   </div>
-  <div v-show="Snumber" class="s-field__number_default">
+  <div v-show="type==='number'" class="s-field__number_default">
     <div class="s-field__title_dafault">{{ msg }}</div>
     <input type="number" placeholder="请输入数字" @input="Svalue">
   </div>
-  <div v-show="Sverification" class="s-field__verification_default">
+  <div v-show="type==='verification'" class="s-field__verification_default">
     <div class="s-field__title_dafault">{{ msg }}</div>
     <input class="s-field__enter_dafault" type="text" placeholder="请输入验证码" @input="Svalue">
     <button @click="submit">······</button>
