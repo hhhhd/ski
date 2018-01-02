@@ -7,13 +7,12 @@ require('./style.less')
 @Component({
   template,
   props: {
-    isShow: Boolean,
+    show: String,
   }
 })
 export default class Button extends Vue {
-  showBox = false
   close() {
-    this.isShow = false;
-    setTimeout(() => { this.showBox = true }, 400);
+    this.show = false;
+    setTimeout(() => { this.show = true }, 400);
   }
 }
