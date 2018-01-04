@@ -8,69 +8,36 @@ require('./style.less')
   template
 })
 export default class Swipe extends Vue {
-  isFalse = true
-  isTrueOne = true
-  isTrueTwo = false
-  isTrueThree = false
-  isRoundOne = true
-  isRoundTwo = false
-  isRoundThree = false
+  boxArr = []
+  roundArr = []
   intervalId = null
   mounted() {
-    this.GoScroll()
-    this.intervalId = setInterval(this.GoScroll, 9000)
+    console.log(this.intervalId)
   }
   GoScroll() {
     setTimeout(() => {
-      console.log('第一步')
-      this.isTrueOne = true
-      this.isTrueTwo = false
-      this.isTrueThree = false
-      this.isRoundOne = true
-      this.isRoundTwo = false
-      this.isRoundThree = false
+      this.toOne()
       setTimeout(() => {
-        console.log('第三步')
-        this.isTrueOne = false
-        this.isTrueTwo = true
-        this.isTrueThree = false
-        this.isRoundOne = false
-        this.isRoundTwo = true
-        this.isRoundThree = false
+        this.toTwo()
         setTimeout(() => {
-          console.log('第五步')
-          this.isTrueOne = false
-          this.isTrueTwo = false
-          this.isTrueThree = true
-          this.isRoundOne = false
-          this.isRoundTwo = false
-          this.isRoundThree = true
+          this.toThree()
         }, 3000);
       }, 3000);
     }, 0);
   }
   toOne() {
-    this.isTrueOne = true
-    this.isTrueTwo = false
-    this.isTrueThree = false
-    this.isRoundOne = true
-    this.isRoundTwo = false
-    this.isRoundThree = false
+    this.roundArr = [1]
+    this.boxArr = [1]
+    console.log(this.roundArr, this.boxArr)
   }
   toTwo() {
-    this.isTrueOne = false
-    this.isTrueTwo = true
-    this.isTrueThree = false
-    this.isRoundOne = false
-    this.isRoundTwo = true
-    this.isRoundThree = false
+    this.roundArr = [2]
+    this.boxArr = [2]
+    console.log(this.roundArr, this.boxArr)
   }
   toThree() {
-    this.isTrueOne = false
-    this.isTrueTwo = false
-    this.isTrueThree = true
-    this.isRoundOne = false
-    this.isRoundTwo = false
-    this.isRoundThree = true
+    this.roundArr = [3]
+    this.boxArr = [3]
+    console.log(this.roundArr, this.boxArr)
   }
 }
