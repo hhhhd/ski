@@ -8,6 +8,7 @@ require('./style.less')
   template,
   props: {
     title: String,
+    type: String,
   },
 })
 export default class Button extends Vue {
