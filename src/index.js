@@ -7,6 +7,7 @@ import header from './components/header'
 import toast from './components/toast'
 import alert from './components/alert'
 import loading from './components/loading'
+import footer from './components/footer'
 
 export {
   toast,
@@ -17,5 +18,6 @@ export {
   header,
   alert,
   loading,
-  tabbar
+  tabbar,
+  footer
 }
