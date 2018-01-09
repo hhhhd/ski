@@ -20,17 +20,11 @@ export default class TabContainer extends Vue {
   isShowThree = false
   mounted() {
     if (this.value === 1) {
-      this.isShowOne = true;
-      this.isShowTwo = false;
-      this.isShowThree = false;
+      this.ShowBoxOne()
     } else if (this.value === 2) {
-      this.isShowOne = false;
-      this.isShowTwo = true;
-      this.isShowThree = false;
+      this.ShowBoxTwo()
     } else if (this.value === 3) {
-      this.isShowOne = false;
-      this.isShowTwo = false;
-      this.isShowThree = true;
+      this.ShowBoxThree()
     } else {
       console.log('请输入1～3')
     }

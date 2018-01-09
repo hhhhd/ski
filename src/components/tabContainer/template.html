@@ -5,8 +5,8 @@
     <span @click="ShowBoxThree" class="s-tab__button_default">{{ titleThree }}</span>
   </div>
   <div class="s-tab__TabContainner_default">
-      <span v-show="isShowOne" class="s-tab__box_default"><slot></slot></span>
-      <span v-show="isShowTwo" class="s-tab__box_default"><slot></slot></span>
-      <span v-show="isShowThree" class="s-tab__box_default"><slot></slot></span>
+      <span v-show="isShowOne" class="s-tab__box_default"><slot name="one"></slot></span>
+      <span v-show="isShowTwo" class="s-tab__box_default"><slot name="two"></slot></span>
+      <span v-show="isShowThree" class="s-tab__box_default"><slot name="three"></slot></span>
   </div>
 </div>
