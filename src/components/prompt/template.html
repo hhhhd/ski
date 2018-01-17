@@ -1,0 +1,13 @@
+<transition name="fade">
+  <div v-show="show==='true'" class="s-prompt__containers_default">
+    <div class="cover"></div>
+    <div class="s-prompt__popup_default">
+      <p>{{ msg }}</p>
+      <input @input="inputValue" />
+      <div class="s-prompt__close_default">
+        <div @click="close">取消</div>
+        <div @click="upload">确定</div>
+      </div>
+    </div>
+  </div>
+</transition>
